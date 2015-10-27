@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Banking Application | Login</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link type="style/text" rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <div id="container">
+            <header>
+                <nav>
+                    <h1>First Bank of Clearwater</h1>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="transaction.html">Transaction</a></li>
+                        <li><a href="account_activity.html">Account</a></li>
+                        <li><a href="new_customer.html">New Customer</a></li>
+                        <li><a href="login.html">Login</a></li>
+                    </ul>
+                </nav>
+                <h2>Login</h2>
+            </header>
+            <div id="loginArea">
+                <form id="login" method="post" action="loginServlet">
+                    <label for="userName">Username: </label>
+                    <input type="text" name="userName" id="userName"><br><br>
+                    
+                    <label for="password">Password: </label>
+                    <input type="password" name="password" id="password"><br><br>
+                    <button type="submit">Submit</button>
+                    
+                </form>
+                <span id="newCust"><a href="new_customer.html">Don't have an account yet? Create one here!</a></span><br><br>
+            </div><!-- end #loginArea -->
+        </div>
+    </body>
+</html>
