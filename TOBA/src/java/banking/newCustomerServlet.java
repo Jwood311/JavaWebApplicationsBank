@@ -6,13 +6,14 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 /**
  *
  * @author Josh
  */
 @WebServlet(name = "newCustomerServlet", urlPatterns = {"/newCustomerServlet"})
-public class newCustomerServlet extends HttpServlet {
+public class NewCustomerServlet extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -28,10 +29,11 @@ public class newCustomerServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        
+        //create/get session
+        HttpSession session = request.getSession();
 
         //set redirect url's
-        String passUrl = "success.html";
+        String passUrl = "success.jsp";
         String failUrl = "/new_customer.jsp";
         
         String message;
@@ -43,7 +45,7 @@ public class newCustomerServlet extends HttpServlet {
         String address = request.getParameter("address");
         String city = request.getParameter("city");
         String state = request.getParameter("state");
-        String zipCode= request.getParameter("zipCode");
+        String zipCode = request.getParameter("zipCode");
         String email = request.getParameter("email");
         
         
@@ -53,7 +55,11 @@ public class newCustomerServlet extends HttpServlet {
         if(!"".equals(firstName) && !"".equals(lastName) && !"".equals(phone) && !"".equals(address)
                 && !"".equals(city) && !"".equals(state) && !"".equals(zipCode) 
                 && !"".equals(email)){
-                    response.sendRedirect(passUrl);
+            //create new User object with inputs
+            User user = new User(firstName, lastName, phone, address, city, state, zipCode, email, lastName + zipCode, "welcome1");
+            //store user in session
+            session.setAttribute("user", user);
+            response.sendRedirect(passUrl);
             message = "";
                  
 

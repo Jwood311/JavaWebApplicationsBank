@@ -12,7 +12,7 @@ import javax.servlet.http.HttpServletResponse;
  * @author Josh
  */
 @WebServlet(name = "loginServlet", urlPatterns = {"/loginServlet"})
-public class loginServlet extends HttpServlet {
+public class LoginServlet extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -33,8 +33,8 @@ public class loginServlet extends HttpServlet {
         String USERNAME = "jsmith@toba.com";
         String PASSWORD = "letmein";
         //set redirect url's
-        String passUrl = "account_activity.html";
-        String failUrl = "login_failure.html";
+        String passUrl = "account_activity.jsp";
+        String failUrl = "login_failure.jsp";
         
       //get posted parameters
         String userName = request.getParameter("userName");

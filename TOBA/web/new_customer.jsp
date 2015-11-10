@@ -1,24 +1,5 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Banking Application | New Customer</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link type="style/text" rel="stylesheet" href="css/style.css">
-    </head>
-    <body>
-        <div id="container">
-            <header>
-                <nav>
-                    <h1>First Bank of Clearwater</h1>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="transaction.html">Transaction</a></li>
-                        <li><a href="account_activity.html">Account</a></li>
-                        <li><a href="new_customer.html">New Customer</a></li>
-                        <li><a href="login.html">Login</a></li>
-                        </ul>
-                </nav>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<c:import url="header.html" />
                 <h2>New Customer</h2>
             </header>
             <div id="newCustArea">
@@ -45,5 +26,5 @@
             </div>
         </div>
     </body>
-</html>
+<c:import url="footer.jsp" />
 
