@@ -3,7 +3,7 @@
                 <h2>Login</h2>
             </header>
             <div id="loginArea">
-                <form id="login" method="post" action="loginServlet">
+                <form id="login" method="post" action="LoginServlet">
                     <p>Your login information was incorrect</p>
                     <label for="userName">Username: </label>
                     <input type="text" name="userName" id="userName"><br><br>

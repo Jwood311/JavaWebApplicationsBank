@@ -3,7 +3,7 @@
                 <h2>New Customer</h2>
             </header>
             <div id="newCustArea">
-                <form name="newCustomer" method="post" action="newCustomerServlet">
+                <form name="newCustomer" method="post" action="NewCustomerServlet">
                     <p>${message}</p>
                     <label for="fisrtName">First Name: </label>
                         <input type="text" name="firstName" id="firstName"><br>

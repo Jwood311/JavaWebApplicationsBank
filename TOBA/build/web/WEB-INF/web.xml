@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app version="3.0" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee                              http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
     <servlet>
-        <servlet-name>loginServlet</servlet-name>
+        <servlet-name>LoginServlet</servlet-name>
         <servlet-class>banking.LoginServlet</servlet-class>
     </servlet>
     <servlet-mapping>
-        <servlet-name>loginServlet</servlet-name>
-        <url-pattern>/loginServlet</url-pattern>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/LoginServlet</url-pattern>
     </servlet-mapping>
       <servlet>
         <servlet-name>PasswordResetServlet</servlet-name>
@@ -17,20 +17,20 @@
         <url-pattern>/PasswordResetServlet</url-pattern>
     </servlet-mapping>
     <servlet>
-        <servlet-name>newCustomerServlet</servlet-name>
+        <servlet-name>NewCustomerServlet</servlet-name>
         <servlet-class>banking.NewCustomerServlet</servlet-class>
     </servlet>
     <servlet-mapping>
-        <servlet-name>newCustomerServlet</servlet-name>
-        <url-pattern>/newCustomerServlet</url-pattern>
+        <servlet-name>NewCustomerServlet</servlet-name>
+        <url-pattern>/NewCustomerServlet</url-pattern>
     </servlet-mapping>
     <servlet>
-        <servlet-name>transactionServlet</servlet-name>
+        <servlet-name>TransactionServlet</servlet-name>
         <servlet-class>banking.TransactionServlet</servlet-class>
     </servlet>
     <servlet-mapping>
-        <servlet-name>transactionServlet</servlet-name>
-        <url-pattern>/transactionServlet</url-pattern>
+        <servlet-name>TransactionServlet</servlet-name>
+        <url-pattern>/TransactionServlet</url-pattern>
     </servlet-mapping>
     <!-- you can comment out these tags when the app is in development -->
     <error-page>
