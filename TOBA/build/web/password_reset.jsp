@@ -10,7 +10,7 @@
                     <button type="submit">Submit</button>
                     
                 </form>
-                    <span id="newCust"><a href="new_customer.html">Don't have an account yet? Create one here!</a></span><br><br>
+                    <span id="newCust"><a href="new_customer.jsp">Don't have an account yet? Create one here!</a></span><br><br>
             </div><!-- end #loginArea -->
         </div>
     </body>
