@@ -4,6 +4,7 @@
                 <c:choose>
                 <c:when test="${user.userName != null}">
                     <p>Welcome ${user.firstName} ${user.lastName}.</p>
+                    <p>Account Activity : ${account}</p>
                 </c:when>
                     <c:otherwise>
                         <p>Not Logged In</p>

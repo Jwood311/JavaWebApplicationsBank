@@ -1,6 +1,6 @@
 package banking;
 
-import java.io.IOException;
+import java.io.*;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -8,22 +8,13 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-/**
- *
- * @author Josh
- */
+import banking.User;
+import data.UserDB;
+
+
 @WebServlet(name = "NewCustomerServlet", urlPatterns = {"/NewCustomerServlet"})
 public class NewCustomerServlet extends HttpServlet {
 
-    /**
-     * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
-     * methods.
-     *
-     * @param request servlet request
-     * @param response servlet response
-     * @throws ServletException if a servlet-specific error occurs
-     * @throws IOException if an I/O error occurs
-     */
     
     //overide doPost to get posted info. from login.html
     @Override
@@ -57,8 +48,25 @@ public class NewCustomerServlet extends HttpServlet {
                 && !"".equals(email)){
             //create new User object with inputs
             User user = new User(firstName, lastName, phone, address, city, state, zipCode, email, lastName + zipCode, "welcome1");
+            
+            //create new Account savings object
+            Account account = new Account(user, 25.00, Savings);
+            //create new Accout checking object
+            Account account = new Account(user, 0.00, Checking);
+
+
+            //insert user into DB
+            UserDB.insert(user);
+            
+            //insert the account into the DB
+            AccountDB.insert(account);
+            
             //store user in session
             session.setAttribute("user", user);
+            //store the account in a session
+            session.setAttribute("activity", account);
+            
+            
             response.sendRedirect(passUrl);
             message = "";
                  

@@ -1,18 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<web-app 
-    version="3.1"
-    xmlns="http://xmlns.jcp.org/xml/ns/javaee"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+<web-app version="3.0" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
     <servlet>
         <servlet-name>LoginServlet</servlet-name>
         <servlet-class>banking.LoginServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>UserDB</servlet-name>
+        <servlet-class>data.UserDB</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ConnectionPool</servlet-name>
+        <servlet-class>data.ConnectionPool</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>DBUtil</servlet-name>
+        <servlet-class>data.DBUtil</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Account</servlet-name>
+        <servlet-class>banking.Account</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>AccountDB</servlet-name>
+        <servlet-class>data.AccountDB</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>LoginServlet</servlet-name>
         <url-pattern>/LoginServlet</url-pattern>
     </servlet-mapping>
-      <servlet>
+    <servlet>
         <servlet-name>PasswordResetServlet</servlet-name>
         <servlet-class>banking.PasswordResetServlet</servlet-class>
     </servlet>
@@ -36,6 +52,10 @@
         <servlet-name>TransactionServlet</servlet-name>
         <url-pattern>/TransactionServlet</url-pattern>
     </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>UserDB</servlet-name>
+        <url-pattern>/UserDB</url-pattern>
+    </servlet-mapping>
     <!-- you can comment out these tags when the app is in development -->
     <error-page>
         <error-code>404</error-code>
@@ -45,6 +65,22 @@
         <exception-type>java.lang.Throwable</exception-type>
         <location>/error_java.jsp</location>
     </error-page>
+    <servlet-mapping>
+        <servlet-name>ConnectionPool</servlet-name>
+        <url-pattern>/ConnectionPool</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>DBUtil</servlet-name>
+        <url-pattern>/DBUtil</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Account</servlet-name>
+        <url-pattern>/Account</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AccountDB</servlet-name>
+        <url-pattern>/AccountDB</url-pattern>
+    </servlet-mapping>
     <session-config>
         <session-timeout>30</session-timeout>
     </session-config>

@@ -1,5 +1,6 @@
 package banking;
 
+import data.UserDB;
 import java.io.IOException;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -38,6 +39,10 @@ public class PasswordResetServlet extends HttpServlet {
             user.setPassword(password);
             //store user in session
             session.setAttribute("user", user);
+            
+            //update user in DB
+            UserDB.update(user);
+            
             response.sendRedirect(passUrl);
             message = "";
                  

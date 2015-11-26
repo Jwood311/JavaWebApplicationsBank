@@ -1,11 +1,10 @@
 package banking;
 import java.io.Serializable;
-/**
- *
- * @author Josh
- */
+
+
 public class User implements Serializable{
     
+
     private String firstName;
     private String lastName;
     private String phone;
@@ -22,7 +21,7 @@ public class User implements Serializable{
     }
     public User(String firstName, String lastName, String phone, String address, String city, String state,
             String zipCode, String email, String userName, String password){
-           this.firstName = firstName;
+            this.firstName = firstName;
             this.lastName = lastName;
             this.phone = phone;
             this.address = address;
