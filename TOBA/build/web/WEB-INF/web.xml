@@ -56,7 +56,7 @@
         <servlet-name>UserDB</servlet-name>
         <url-pattern>/UserDB</url-pattern>
     </servlet-mapping>
-    <!-- you can comment out these tags when the app is in development -->
+    <!-- you can comment out these tags when the app is in development 
     <error-page>
         <error-code>404</error-code>
         <location>/error_404.jsp</location>
@@ -88,4 +88,5 @@
         <welcome-file>index.html</welcome-file>
         <welcome-file>index.jsp</welcome-file>
     </welcome-file-list>
+    -->
 </web-app>

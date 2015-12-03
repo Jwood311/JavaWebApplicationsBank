@@ -2,26 +2,6 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group>
-            <file>file:/C:/Users/Josh/Documents/NetBeansProjects/Java%202/TOBA/src/java/banking/TransactionServlet.java</file>
-            <file>file:/C:/Users/Josh/Documents/NetBeansProjects/Java%202/TOBA/web/header.html</file>
-            <file>file:/C:/Users/Josh/Documents/NetBeansProjects/Java%202/TOBA/src/conf/MANIFEST.MF</file>
-            <file>file:/C:/Users/Josh/Documents/NetBeansProjects/Java%202/TOBA/src/java/banking/PasswordResetServlet.java</file>
-            <file>file:/C:/Users/Josh/Documents/NetBeansProjects/Java%202/TOBA/src/java/banking/LoginServlet.java</file>
-            <file>file:/C:/Users/Josh/Documents/NetBeansProjects/Java%202/TOBA/src/conf/persistence.xml</file>
-            <file>file:/C:/Users/Josh/Documents/NetBeansProjects/Java%202/TOBA/src/java/banking/Account.java</file>
-            <file>file:/C:/Users/Josh/Documents/NetBeansProjects/Java%202/TOBA/web/account_activity.jsp</file>
-            <file>file:/C:/Users/Josh/Documents/NetBeansProjects/Java%202/TOBA/web/login_failure.jsp</file>
-            <file>file:/C:/Users/Josh/Documents/NetBeansProjects/Java%202/TOBA/web/new_customer.jsp</file>
-            <file>file:/C:/Users/Josh/Documents/NetBeansProjects/Java%202/TOBA/src/java/data/DBUtil.java</file>
-            <file>file:/C:/Users/Josh/Documents/NetBeansProjects/Java%202/TOBA/web/transfer.jsp</file>
-            <file>file:/C:/Users/Josh/Documents/NetBeansProjects/Java%202/TOBA/web/META-INF/context.xml</file>
-            <file>file:/C:/Users/Josh/Documents/NetBeansProjects/Java%202/TOBA/src/java/data/ConnectionPool.java</file>
-            <file>file:/C:/Users/Josh/Documents/NetBeansProjects/Java%202/TOBA/src/java/banking/User.java</file>
-            <file>file:/C:/Users/Josh/Documents/NetBeansProjects/Java%202/TOBA/web/WEB-INF/web.xml</file>
-            <file>file:/C:/Users/Josh/Documents/NetBeansProjects/Java%202/TOBA/src/java/banking/NewCustomerServlet.java</file>
-            <file>file:/C:/Users/Josh/Documents/NetBeansProjects/Java%202/TOBA/src/java/data/AccountDB.java</file>
-            <file>file:/C:/Users/Josh/Documents/NetBeansProjects/Java%202/TOBA/src/java/data/UserDB.java</file>
-        </group>
+        <group/>
     </open-files>
 </project-private>
